@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Perfect Page</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script defer src="Script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Brand</div>
+            <div class="nav-links" id="nav-menu">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="icons">
+                <button id="search-icon">🔍</button>
+                <button id="menu-toggle">☰</button>
+            </div>
+        </nav>
+        <div id="search-box" class="hidden">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+    
+    <section id="product">
+        <div class="gallery">
+            <img id="gallery-main" src="image1.jpg" alt="Product">
+            <div class="thumbnails">
+                <img class="thumbnail" src="image1.jpg" alt="Thumb 1">
+                <img class="thumbnail" src="image2.jpg" alt="Thumb 2">
+                <img class="thumbnail" src="image3.jpg" alt="Thumb 3">
+            </div>
+            <button id="prev-arrow">←</button>
+            <button id="next-arrow">→</button>
+        </div>
+        <div class="product-details">
+            <h2>Alcami Elements</h2>
+            <div class="options">
+                <label>Flavors:</label>
+                <input type="radio" name="flavor" value="vanilla"> Vanilla
+                <input type="radio" name="flavor" value="chocolate"> Chocolate
+                <input type="radio" name="flavor" value="strawberry"> Strawberry
+                <br>
+                <label>Purchase Type:</label>
+                <input type="radio" name="purchase-type" value="single"> Single
+                <input type="radio" name="purchase-type" value="pack"> Pack
+                <input type="radio" name="purchase-type" value="bulk"> Bulk
+            </div>
+            <a id="add-to-cart" href="#">Add to Cart</a>
+        </div>
+    </section>
+    
+    <section id="stats">
+        <div class="counter" data-target="84">0%</div>
+        <div class="counter" data-target="78">0%</div>
+    </section>
+    
+    <section id="testimonials">
+        <div class="scrollable">Customer reviews here...</div>
+    </section>
+    
+    <section id="faq">
+        <div class="faq-item">
+            <div class="faq-question">What is this product?</div>
+            <div class="faq-answer hidden">This product is amazing!</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How does it work?</div>
+            <div class="faq-answer hidden">It works like magic.</div>
+        </div>
+    </section>
+</body>
+</html>
+
